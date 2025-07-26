@@ -1,8 +1,14 @@
 # Smart Gesture-Based Device Control System
 
+> 🧭 **Motto:** Designed to empower **physically challenged individuals** by enabling **touch-free, intuitive control** of digital devices using simple hand gestures.  
+> This project promotes **accessibility**, **inclusivity**, and **independence** through technology.
+
+---
+
 A real-time gesture-controlled interface to replace traditional mouse and keyboard inputs. The system leverages MediaPipe, U-Net, and Pynput in a unified pipeline for robust and contactless human-computer interaction (HCI).
 
-![Uploading image.png…]
+<img width="536" height="445" alt="image" src="https://github.com/user-attachments/assets/f954c312-e9bf-4fd5-bf35-787255a19d59" />
+
 
 ## 👨‍💻 Authors
 - Shaik Sadik (22341A05G2)  
