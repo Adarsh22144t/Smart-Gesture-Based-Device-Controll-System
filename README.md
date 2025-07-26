@@ -2,8 +2,7 @@
 
 A real-time gesture-controlled interface to replace traditional mouse and keyboard inputs. The system leverages MediaPipe, U-Net, and Pynput in a unified pipeline for robust and contactless human-computer interaction (HCI).
 
-![Project Banner](![Uploading image.png…]()
-)
+![Uploading image.png…]
 
 ## 👨‍💻 Authors
 - Shaik Sadik (22341A05G2)  
