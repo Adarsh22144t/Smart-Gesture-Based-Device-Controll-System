@@ -55,7 +55,8 @@ Unlike traditional models relying on heavy deep learning architectures, our appr
 ## ⚙️ System Workflow
 
 ### General Workflow Diagram
-![General Workflow](general_workflow.png)
+<img width="745" height="522" alt="image" src="https://github.com/user-attachments/assets/0190eba8-566d-4f53-8e5a-1b8c22e72e35" />
+
 
 1. **Live Feed** is captured via camera  
 2. **Vision Transformer** adds noise to simulate challenging environments  
@@ -70,32 +71,37 @@ Unlike traditional models relying on heavy deep learning architectures, our appr
 ### Methodology 1 – Localization (BlazePose)
 - Uses BlazePose + CNN to predict bounding boxes  
 - Optimizes Region of Interest (ROI) for gesture detection  
-![Localization Diagram](methodology_1.png)
+<img width="733" height="459" alt="image" src="https://github.com/user-attachments/assets/909afbf1-1317-4294-842e-c999f9f8c5d8" />
+
 
 ### Methodology 2 – Image Denoising (U-Net)
 - Adds Gaussian noise → Encodes → Decodes using U-Net  
 - Enhances image clarity before gesture detection  
-![Denoising Diagram](methodology_2.png)
+<img width="748" height="457" alt="image" src="https://github.com/user-attachments/assets/d3a8df12-2fe5-41e6-8a62-9644e0e444f1" />
+
 
 ### Methodology 3 – Gesture Mapping (MediaPipe + Pynput)
 - Tracks hand landmarks  
 - Identifies gesture states (e.g., fingers up/down)  
 - Triggers cursor/keyboard actions via Pynput  
-![Gesture Mapping Diagram](methodology_3.png)
+<img width="746" height="461" alt="image" src="https://github.com/user-attachments/assets/bdd8e725-9121-417a-9619-3875838721c4" />
+
 
 ---
 
 ## 📊 Results
 
 ### Inference Speed
-![Inference Speed Graph](inference_times.png)
+<img width="735" height="474" alt="image" src="https://github.com/user-attachments/assets/d2f5a2d3-cf5f-4060-9290-8650fd33a14d" />
+
 
 ### Model Performance
 - **MediaPipe** consistently outperformed YOLO/DETR in latency and stability  
 - **U-Net** denoising improves gesture localization accuracy  
+<img width="727" height="342" alt="image" src="https://github.com/user-attachments/assets/5027ee3b-74a1-4d28-8f1f-46744c69304b" />
 
-![Performance Metrics](performance_metrics.png)  
-![Denoising Model Results](denoising_results.png)
+<img width="721" height="368" alt="image" src="https://github.com/user-attachments/assets/f17244d2-0555-461a-ba36-13305bd5a6be" />
+
 
 ---
 
@@ -121,12 +127,4 @@ Our system integrates localization, denoising, and gesture detection into a seam
 - `keyboard_typing.png` – Virtual keyboard control  
 - `cursor_control.png` – Mouse control using hand gestures  
 
----
 
-## 📦 How to Run
-
-```bash
-git clone https://github.com/Adarsh22144t/Smart-Gesture-Based-Device-Controll-System.git
-cd Smart-Gesture-Based-Device-Controll-System
-pip install -r requirements.txt
-python gesture.py
